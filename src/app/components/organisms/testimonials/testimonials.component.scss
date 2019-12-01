@@ -1,0 +1,25 @@
+.testimonials{
+  background-color: #f3f3f3;
+  padding: 4rem;
+  min-height: 60vh;
+  &__bubbles{
+    &__card{
+      margin: 1rem;
+      width: 100%;
+      &__client{
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonials{
+    padding: 1rem;
+    &__bubbles{
+      flex-direction: column;
+      &__card{
+        margin: 1rem 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<div class="form d-flex justify-content-center align-items-center">
+  <div class="form__parent">
+    <app-text margin="0" text="Convinced To Work With Us?" fontSize="2rem" color="#fff" align="center"></app-text>
+    <app-text text="Company has helped agencies keep their promises to clients since 2005." color="#fff" align="center"></app-text>
+    <div class="form__contact d-flex flex-column">
+      <form role="form" [formGroup]="contactForm" (submit)="onFormSubmit()">
+        <div class="form__contact__info d-flex">
+          <app-input class="d-flex w-100 form__input mr-1" [formName]="contactForm.get('full_name')" placeholder="Fullname" width="100%"></app-input>
+          <app-input class="d-flex w-100 form__input mr-1" [formName]="contactForm.get('email')" type="email" placeholder="Email Address" width="100%"></app-input>
+          <app-input class="d-flex w-100 form__input" [formName]="contactForm.get('phone')" type="tel" placeholder="PhoneNumber" width="100%"></app-input>
+        </div>
+        <textarea class="form__textarea" formControlName="message" rows="5" placeholder="Message in brief" aria-label="Message in brief"></textarea>
+        <app-button class="d-flex justify-content-center mt-1" fontSize="0.8rem" bgColor="#A32B00" borderRadius="24px" text="Submit"></app-button>
+      </form>
+    </div>
+  </div>
+</div>

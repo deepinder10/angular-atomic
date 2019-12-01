@@ -1,0 +1,32 @@
+.form{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.47)), url(https://uppic.cc/d/5Xbr);
+  min-height: 60vh;
+  padding: 2rem;
+  &__parent{
+    width: 50%;
+  }
+  &__contact{
+    margin-top: 2rem;
+  }
+  &__contact__info{
+    margin-bottom: 1rem;
+  }
+  &__textarea{
+    border-radius: 2px;
+    resize: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form{
+    &__parent{
+      width: 100%;
+    }
+    &__contact__info{
+      flex-direction: column;
+    }
+    &__input{
+      margin-top: 1rem;
+    }
+  }
+}

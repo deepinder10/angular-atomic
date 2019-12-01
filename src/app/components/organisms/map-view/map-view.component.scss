@@ -1,0 +1,15 @@
+.map-view{
+  padding: 4rem;
+  &__text{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .map-view{
+    padding: 1rem;
+    flex-direction: column;
+    &__text{
+      width: auto;
+    }
+  }
+}

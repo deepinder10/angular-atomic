@@ -1,3 +1,7 @@
+You can find the working example here - https://stackblitz.com/github/deepinder10/axelerant
+CodeSandBox didn't support importing Angular 8 repos and it broke down, so had to use StackBlitz instead.
+Code is following the Atomic Design and CSS in BEM design and a11y standards have been maintained.
+
 # Axelerant
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.

@@ -1,0 +1,22 @@
+.card{
+  border: solid 1px #e4e4ed6b;
+  margin: 1rem;
+  padding: 1rem;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  &__img{
+    height: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card{
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    &__img{
+      height: 40px;
+      margin-right: 1rem;
+    }
+  }
+}

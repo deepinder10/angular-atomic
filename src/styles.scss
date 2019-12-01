@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+*{
+  font-family: 'Open Sans';
+}
+body{
+  margin: 0;
+}
+.d-flex{
+  display: flex;
+}
+.flex-column{
+  flex-direction: column;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+.align-items-center{
+  align-items: center;
+}
+.w-100{
+  width: 100%;
+}
+.mr-1{
+  margin-right: 1rem;
+}
+.ml-1{
+  margin-left: 1rem;
+}
+.mt-1{
+  margin-top: 1rem;
+}

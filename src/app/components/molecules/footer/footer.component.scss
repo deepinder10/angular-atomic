@@ -1,0 +1,9 @@
+.footer{
+  background-color: #333;
+  padding: 0.7rem 1rem;
+}
+@media screen and (max-width: 767px) {
+  .footer{
+    flex-direction: column;
+  }
+}

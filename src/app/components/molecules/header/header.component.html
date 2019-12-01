@@ -1,0 +1,12 @@
+<header class="header d-flex align-items-center">
+  <app-button class="header__menu" image="assets/images/menu.svg" padding="0" value="menu" (click)="menuShown = !menuShown"></app-button>
+  <app-image alt="company logo" class="header__logo" src="https://uppic.cc/d/5W4S"></app-image>
+  <div class="header__links d-flex align-items-center">
+    <app-links-list></app-links-list>
+    <app-button text="Get in Touch" bgColor="#A32B00" fontSize="1rem" borderRadius="24px" image="assets/images/speech-bubble.svg"></app-button>
+  </div>
+  <app-button class="header__bubble" value="chat" padding="0" image="assets/images/speech-bubble.svg"></app-button>
+</header>
+<div class="menu-links d-flex" *ngIf="menuShown">
+  <app-links-list class="d-flex flex-column align-items-center w-100"></app-links-list>
+</div>

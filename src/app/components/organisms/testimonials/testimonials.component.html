@@ -1,0 +1,9 @@
+<div class="testimonials d-flex flex-column align-items-center">
+  <app-text text="Testimonials" align="center" fontSize="1.7rem"></app-text>
+  <div class="d-flex testimonials__bubbles">
+    <div class="testimonials__bubbles__card d-flex flex-column" *ngFor="let card of testimonials">
+      <app-testimonial-card [text]="card.text"></app-testimonial-card>
+      <app-client-bubble class="testimonials__bubbles__card__client" [data]="card"></app-client-bubble>
+    </div>
+  </div>
+</div>

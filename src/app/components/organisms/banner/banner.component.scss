@@ -1,0 +1,16 @@
+.banner{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.47)), url(https://uppic.cc/d/5XSW);
+  background-size: cover;
+  min-height: 90vh;
+  padding: 1rem;
+  &__image-cards{
+    width: 50%;
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner__image-cards{
+    flex-direction: column;
+    width: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+.header{
+  background: #333;
+  padding: 0.7rem 2rem;
+  justify-content: space-between;
+  &__logo{
+    height: 45px;
+  }
+  &__menu{
+    display: none;
+  }
+  &__bubble{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header{
+    padding: 0.9rem 1rem;
+    &__menu{
+      display: block;
+    }
+    &__links{
+      display: none;
+    }
+    &__bubble{
+      display: block;
+    }
+  }
+  .menu-links{
+    background: #333;
+    position: absolute;
+    width: 100%;
+  }
+}
